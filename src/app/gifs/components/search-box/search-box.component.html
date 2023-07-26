@@ -1,2 +1,9 @@
 <h5>Buscar</h5>
-<input type="text" class="form-control" placeholder="Buscar Gifs...">
+<!-- Leer los que escribes por teclado y al dar enter lo leera -->
+<input
+  type="text"
+  class="form-control"
+  placeholder="Buscar Gifs..."
+  (keyup.enter)="searchTag()"
+  #txtTagInput
+/>
