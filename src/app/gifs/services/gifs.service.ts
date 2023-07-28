@@ -28,7 +28,7 @@ export class GifsService {
   }
 
   private loadLocalStrorage():void {
-    if(!localStorage.getItem) {
+    if(!localStorage.getItem("history")) {
       //Si no hay informacion
       return
     }
@@ -59,7 +59,7 @@ export class GifsService {
 
     const params = new HttpParams()
       .set('api_key', this.apiKey)
-      .set('limit', '10')
+      .set('limit', '50')
       .set('q', tag)
 
 
