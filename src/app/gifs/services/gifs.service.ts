@@ -63,6 +63,7 @@ export class GifsService {
       .set('q', tag)
 
 
+
     this.http.get<SearchResponse>(`${this.serviceUrl}/search`, { params })
       .subscribe(resp => {
         this.gifsList = resp.data
